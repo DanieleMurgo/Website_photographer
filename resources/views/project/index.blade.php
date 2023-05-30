@@ -1,7 +1,7 @@
 <x-layout>
     <x-slot name="title">Projects</x-slot>
 
-    <div class="container mt-nav vh-100">
+    <div class="container mt-nav view-pj-index">
         <div class="row">
             <h1>Our Projects</h1>
             @foreach ($projects as $project)

@@ -22,3 +22,18 @@
 //         myNavbar.classList.remove("bg-dark", "navbar-dark");
 //     }
 //     })
+
+
+function bgLight () {
+    myNavbar.classList.remove("bg-transparent");
+    myNavbar.classList.add("bg-light");
+}
+
+function bgTransparent () {
+    myNavbar.classList.remove("bg-light");
+    myNavbar.classList.add("bg-transparent");
+}
+
+
+myNavbar.addEventListener ('mouseout', (event) => bgTransparent())
+myNavbar.addEventListener ('mouseover', (event) => bgLight())

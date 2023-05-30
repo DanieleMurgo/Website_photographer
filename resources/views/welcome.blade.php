@@ -7,10 +7,11 @@
 
     <section>
         <div class="container">
-            <h2 class="mt-5 text-secondary text-center">
-                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat veniam accusamus accusantium, molestias
-                nulla nemo dicta porro aliquam officia inventore debitis ipsam excepturi sint et ad iste dolorum
-                dignissimos? Unde?"
+            <h2 class="mt-5 text-secondary fs-5">
+                "Fattura studio is a collective specialized in creative/art direction, styling, and multimedia
+                production materials. We are characterized by a strong and uncompromising identity, choosing to work
+                exclusively with collaborators who support us with their spaces, being able to connect you to the art
+                world, in all its possible forms."
             </h2>
             <div class="row mt-5">
                 <div class="col-12 col-md-4">
@@ -86,7 +87,7 @@
     <!-- Sezione ultimo annuncio, capire se modificare questa sezione -->
     <section>
         <div class="container">
-            <h2 class="mt-5 text-secondary text-center">
+            <h2 class="mt-5 text-secondary text-secondary fs-5">
                 "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti praesentium odit totam nihil facere
                 nesciunt libero cumque! Neque consectetur cumque quisquam laboriosam voluptatibus quo alias,
                 consequuntur expedita et officia molestias."

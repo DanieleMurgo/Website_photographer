@@ -15,9 +15,11 @@ transition: 0.4s;
     border:0px;
 }
 
+
+
 .nav-link:hover, #logout:hover {
     transition: 0.4s;
-    border-bottom: 2px solid white ;
+    border-bottom: 2px solid black;
     }    
     
 @media only screen and (max-width: 600px) {
