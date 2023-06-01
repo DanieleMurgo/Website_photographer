@@ -3,17 +3,19 @@
 <x-layout>
     <x-slot name="title">{{$project->name}}</x-slot>
     <div class="container mt-nav">
-        <div class="row h-100">
+        <div class="row h-100 justify-content-center">
+            <button class="collapsed border border-0 btn btn-white" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne"
+                id="button-accordion-details">
+                Read More +
+            </button>
 
-            <div class="accordion" id="accordionExample">
-                <div class="accordion-item">
+            <div class="accordion" id="accordionInfo">
+                <div class="accordion-item border border-0">
                     <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                            Read More +
-                        </button>
                     </h2>
-                    <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div id="collapseOne" class="accordion-collapse collapse border border-dark"
+                        data-bs-parent="#accordionInfo">
                         <div class="accordion-body">
                             <div class="container">
                                 <div class="row h-100 mt-3">
@@ -42,8 +44,6 @@
                     </div>
                     @endforeach
                 </div>
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
             </div>
             <div thumbsSlider="" class="swiper mySwiper d-sm-none d-md-block">
                 <div class="swiper-wrapper">

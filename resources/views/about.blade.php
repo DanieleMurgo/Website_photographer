@@ -2,10 +2,103 @@
     <x-slot name="title">About us</x-slot>
     <section>
 
-        <div class="container mt-nav">
+        <div class="container-fluid mt-nav">
             <div class="row">
                 <div class="col-12">
-                    <video src="/videos/Stock_video.mp4" type="video/mp4" controls class="about-vid"></video>
+                    <p class="fs-5">
+                        At the basis of her creative path, Sarah Venturini has the goal of creating an interaction
+                        between
+                        disciplines, which she has always believed to be one of the main purposes of the future image.
+                        For
+                        some time now, she has pursued a path blending art with fashion, in a more intimate way,
+                        considering
+                        it in its multiple facets (architecture, design, music, illustration). Sarah's success and
+                        adherence
+                        to her vision is evident by the fact that many established national galleries and museums have
+                        already supported her.
+
+                        Being true to her initial mission, Sarah founded the Fattura project as a true collective aimed
+                        at
+                        creating a reciprocal link between photography and everything revolving around the world of art,
+                        so
+                        that one can draw from the other without respective misrepresentations. The result is an
+                        unprecedented and magical form of visual language, capable of distorting reality, through the
+                        mutual
+                        collaboration in the most possible dimensions.
+
+                        Fattura is driven by the ability to seek innovation, placing itself beyond the era and the
+                        boundaries imposed on us, in a postmodern way, considering the past as one immense reservoir of
+                        contemporaneity. The collective intends to promote, in a parodistic way, a new concept of art,
+                        already present, but that needs to be re-praised, because it is continuously renewing and
+                        recreating
+                        itself. An art that exists, but that has yet to be truly seen.
+
+                    </p>
+                </div>
+                <hr>
+                <div class="row fs-5">
+                    <h2>Clients</h2>
+                    <div class="col-md-4 col-12">
+                        <ul class="list-unstyled">
+                            <li>Gucci,</li>
+                            <li>Prada,</li>
+                            <li>Miu Miu,</li>
+                            <li>Vivetta,</li>
+                            <li>Marco De Vincenzo,</li>
+                            <li>N°21,</li>
+                            <li>Pietro Franceschini,</li>
+                            <li>Arianna Fabiano,</li>
+                            <li>Matisa,</li>
+                            <li>Antonioli,</li>
+                            <li>Antonia,</li>
+                            <li>Superga,</li>
+                            <li>Kappa,</li>
+                            <li>Khrisjoy,</li>
+                            <li>Coliac,</li>
+                            <li>Nico Giani,</li>
+                            <li>DEFAIENCE,</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4 col-12">
+                        <ul class="list-unstyled">
+                            <li>Istituto Polimoda,</li>
+                            <li>Museo di Scienze Naturali La Specola,</li>
+                            <li>Casa Museo Remo Brindisi,</li>
+                            <li>Palazzo Strozzi,</li>
+                            <li>Eduardo Secci Gallery,</li>
+                            <li>Aria Art Gallery,</li>
+                            <li>Galleria il Ponte,</li>
+                            <li>Mudec,</li>
+                            <li>Palazzo Reale,</li>
+                            <li>Memphis Studio,</li>
+                            <li>Camp Design Gallery,</li>
+                            <li>A Arte Studio Invernizzi,</li>
+                            <li>Galleria Spazienne,</li>
+                            <li>Galleria Bellucci,</li>
+                            <li>Cassina Art Projects,</li>
+                            <li>The Flat by Massimo Carasi,</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4 col-12">
+                        <ul class="list-unstyled">
+                            <li>GAMeC,</li>
+                            <li>Labirinto della Masone,</li>
+                            <li>Museo Madre,</li>
+                            <li>Vogue Italia & Portugal,</li>
+                            <li>L’Officiel Italia,</li>
+                            <li>SLEEK,</li>
+                            <li>NicOtiNe,</li>
+                            <li>METAL,</li>
+                            <li>Hunger Magazine,</li>
+                            <li>T-MAG,</li>
+                            <li>OE Magazine,</li>
+                            <li>unFLOP,</li>
+                            <li>LE MILE,</li>
+                            <li>Collectible DRY,</li>
+                            <li>Youthies,</li>
+                            <li>PERSONNE</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
             <div class="row mt-5">

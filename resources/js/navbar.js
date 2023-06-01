@@ -24,16 +24,16 @@
 //     })
 
 
-function bgLight () {
+function bgWhite () {
     myNavbar.classList.remove("bg-transparent");
-    myNavbar.classList.add("bg-light");
+    myNavbar.classList.add("bg-white");
 }
 
 function bgTransparent () {
-    myNavbar.classList.remove("bg-light");
+    myNavbar.classList.remove("bg-white");
     myNavbar.classList.add("bg-transparent");
 }
 
 
 myNavbar.addEventListener ('mouseout', (event) => bgTransparent())
-myNavbar.addEventListener ('mouseover', (event) => bgLight())
+myNavbar.addEventListener ('mouseover', (event) => bgWhite())
