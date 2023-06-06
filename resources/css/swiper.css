@@ -78,6 +78,11 @@
   height: 270px;
 }
 
+.img-principal-dimension {
+  max-width: 35rem;
+  height: 30rem;
+}
+
 
 /* Swiper end page Welcome */
 .mySwiperEndWelcome {

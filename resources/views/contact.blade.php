@@ -6,8 +6,13 @@
             <!-- column  -->
             <div class="col-12 col-md-6 mb-4">
                 <!-- Row -->
-                <div class="row">
-                    <h2 class="mb-3">Experienced & Professional Team</h2>
+                <h2 class="mb-3">Our Team</h2>
+                <div class="col-12">
+                    <video src="/videos/Cadmea_2022_Fattura.mp4" type="video/mp4" controls class="about-vid"
+                        autoplay></video>
+                </div>
+                <div class="row mt-5">
+
                     @foreach ($workers as $worker)
                     <div class="col-6">
                         <div

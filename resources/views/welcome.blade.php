@@ -19,8 +19,7 @@
                     <div class="swiper mySwiper-welcome-prew">
                         <div class="swiper-wrapper">
                             <!-- Solo la prima slide della preview necessità di un leggero ritardo per dare effetto scorrimento -->
-                            <div class="swiper-slide d-flex align-items-center" data-swiper-autoplay="2700"
-                                id="firstSlide">
+                            <div class="swiper-slide d-flex align-items-center" id="firstSlide">
                                 <div>
                                     <div class="img-preview-dimension">
                                         @if($projects->first()->photos()->first())
@@ -69,12 +68,14 @@
                         <div class="swiper-wrapper">
                             @foreach($projects as $project)
                             <div class="swiper-slide">
-                                @if($project->photos()->skip(1)->first())
-                                <img src="{{ Storage::url($project->photos()->skip(1)->first()->thumb_path) }}" alt=""
-                                    class="img-fluid">
-                                @else
-                                <img src="https://swiperjs.com/demos/images/nature-5.jpg" alt="" class="img-fluid">
-                                @endif
+                                <div class="img-principal-dimension">
+                                    @if($project->photos()->skip(1)->first())
+                                    <img src="{{ Storage::url($project->photos()->skip(1)->first()->thumb_path) }}"
+                                        alt="" class="img-fluid object-fit-contain">
+                                    @else
+                                    <img src="https://swiperjs.com/demos/images/nature-5.jpg" alt="" class="img-fluid">
+                                    @endif
+                                </div>
                             </div>
                             @endforeach
                         </div>
@@ -87,15 +88,17 @@
     <!-- Sezione ultimo annuncio, capire se modificare questa sezione -->
     <section>
         <div class="container">
-            <h2 class="mt-5 text-secondary text-secondary fs-5">
-                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti praesentium odit totam nihil facere
-                nesciunt libero cumque! Neque consectetur cumque quisquam laboriosam voluptatibus quo alias,
-                consequuntur expedita et officia molestias."
+            <h2 class="mt-5 text-secondary fs-5">
+                "In a world that unfortunately has become unstructured and precarious, we barely find that which we
+                truly need to see. Nowadays, it is easier to find superimposed ideological images rather than reality
+                and truth. Fattura Studio was born from this precise need: the desire to represent society as we imagine
+                it, a creative perspective outside any preconceived cage, and therefore, bring to life the voice of
+                those who have always created magical moments."
             </h2>
         </div>
         <div class="bar">
             <span class="bar_content d-none d-sm-block">
-                Lorem Ipsum
+                Fattura Studio
             </span>
         </div>
     </section>
@@ -103,6 +106,11 @@
     <!-- Swiper with all photos -->
     <section>
         <div class="container">
+            <h2 class="mt-5 text-secondary fs-5">
+                "We aspire to give you a complete communication experience: not only in fashion; but also in art,
+                architecture, design, illustration, literature, philosophy, and music; merging all into an unbreakable
+                whole. The end result can also serve as a brand, with its own touch of authenticity."
+            </h2>
             <div class="row">
                 <div class="col-12">
                     <div class="swiper mySwiperEndWelcome">

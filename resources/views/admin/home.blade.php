@@ -10,10 +10,15 @@
                                 data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane"
                                 aria-selected="true">Projects</button>
                         </li>
-                        <li class="nav-item" role="presentation">
+                        <li class="nav-item ms-1" role="presentation">
                             <button class="nav-link text-decoration-none" id="workers-tab" data-bs-toggle="tab"
                                 data-bs-target="#workers-tab-pane" type="button" role="tab"
                                 aria-controls="workers-tab-pane" aria-selected="false">Workers</button>
+                        </li>
+                        <li class="nav-item ms-1" role="presentation">
+                            <button class="nav-link text-decoration-none" id="clients-tab" data-bs-toggle="tab"
+                                data-bs-target="#clients-tab-pane" type="button" role="tab"
+                                aria-controls="clients-tab-pane" aria-selected="false">Clients</button>
                         </li>
                     </ul>
 
@@ -23,9 +28,6 @@
                             aria-labelledby="home-tab" tabindex="0">
                             <x-admin-projects-table :projects="$projects" />
 
-                            <div class="d-flex justify-content-center">
-                                {{ $projects->links() }}
-                            </div>
                         </div>
 
                         <!-- Tab workers contenuto -->
@@ -33,9 +35,13 @@
                             tabindex="0">
                             <x-admin-workers-table :workers="$workers" />
 
-                            <div class="d-flex justify-content-center">
-                                {{ $workers->links() }}
-                            </div>
+                        </div>
+
+                        <!-- Tab clients contenuto -->
+                        <div class="tab-pane fade" id="clients-tab-pane" role="tabpanel" aria-labelledby="home-tab"
+                            tabindex="0">
+                            <x-admin-clients-table :clients="$clients" />
+
                         </div>
                     </div>
                 </div>

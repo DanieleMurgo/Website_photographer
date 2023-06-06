@@ -54,7 +54,7 @@ var swiperWelcomeImg = new Swiper(".mySwiper-welcome-img", {
   spaceBetween: 30,
   centeredSlides: true,
   loop: true,
-  speed: 1000,
+  speed: 1300,
   allowTouchMove: false,
   autoplay: {
     delay: 2500,
@@ -82,7 +82,7 @@ var swiperWelcomePrew = new Swiper(".mySwiper-welcome-prew", {
   spaceBetween: 30,
   centeredSlides: true,
   loop: true,
-  speed: 1000,
+  speed: 1300,
   allowTouchMove: false,
   autoplay: {
     delay: 2500,

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Photo;
+use App\Models\Client;
 use App\Models\Worker;
 use App\Models\Project;
 use App\Mail\ContactMail;
@@ -19,7 +20,11 @@ public function welcome () {
 }    
 
 public function about () {
-    return view('about');
+    $photos = Photo::orderBy('created_at','desc')->get();
+    $clients = Client::orderBy('created_at','desc')->select('name')->get();
+
+    $clientsChunked = $clients->chunk(17);
+    return view('about', compact('photos', 'clientsChunked'));
 }
 
 public function contact () {
@@ -41,9 +46,11 @@ public function login () {
 }
 
 public function admin () {
-    $projects = Project::orderBy('created_at','desc')->paginate(10);
-    $workers = Worker::orderBy('created_at','asc')->paginate(10);
-    return view('admin.home', compact ('projects', 'workers'));
+    // $projects = Project::orderBy('created_at','desc')->paginate(10);
+    $projects = Project::orderBy('name','desc')->get();
+    $workers = Worker::orderBy('created_at','asc')->get();
+    $clients = Client::orderBy('name','asc')->get();
+    return view('admin.home', compact ('projects', 'workers', 'clients'));
 }
 
 }

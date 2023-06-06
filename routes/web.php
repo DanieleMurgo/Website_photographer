@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PhotoController;
+use App\Http\Controllers\ClientController;
 use App\Http\Controllers\PublicController;
 use App\Http\Controllers\WorkerController;
 use App\Http\Controllers\ProjectController;
@@ -41,4 +42,8 @@ Route::middleware(['auth'])->group(function(){
     Route::post('/worker/new/store', [WorkerController::class, 'store']) -> name('worker.store');
     Route::put('/worker/edit/{worker}', [WorkerController::class, 'update'])->name('worker.update');
     Route::delete('/project/delete/{worker}', [WorkerController::class, 'destroy'])->name('worker.delete');
+    // Clients
+    Route::post('/client/new/store', [ClientController::class, 'store']) -> name('client.store');
+    Route::put('/client/edit/{client}', [ClientController::class, 'update'])->name('client.update');
+    Route::delete('/project/delete/{client}', [ClientController::class, 'destroy'])->name('client.delete');
 });
