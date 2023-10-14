@@ -1,0 +1,16 @@
+{
+  "resources/css/app.css": {
+    "file": "assets/app-31caacaf.css",
+    "isEntry": true,
+    "src": "resources/css/app.css"
+  },
+  "resources/img/FS-Logo.png": {
+    "file": "assets/FS-Logo-755f7fb1.png",
+    "src": "resources/img/FS-Logo.png"
+  },
+  "resources/js/app.js": {
+    "file": "assets/app-40e231ae.js",
+    "isEntry": true,
+    "src": "resources/js/app.js"
+  }
+}
