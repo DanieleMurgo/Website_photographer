@@ -13,7 +13,6 @@
                 exclusively with collaborators who support us with their spaces, being able to connect you to the art
                 world, in all its possible forms."
             </h2>
-
             <div class="row mt-5">
                 <div class="col-12 col-md-4">
                     <!-- Swiper -->
