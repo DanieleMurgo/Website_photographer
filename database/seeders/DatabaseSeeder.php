@@ -23,11 +23,11 @@ class DatabaseSeeder extends Seeder
         // Utente test
         // User::factory(10)->create();
 
-        // User::factory()->create([
-        //     'name' => 'Admin',
-        //     'email' => 'admin@admin.com',
-        //     'password' => Hash::make('123456789'),
-        // ]);
+        User::factory()->create([
+            'name' => 'Admin',
+            'email' => 'admin@admin.com',
+            'password' => Hash::make('123456789'),
+        ]);
 
         // Progetti
 
