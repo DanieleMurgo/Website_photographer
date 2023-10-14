@@ -4,7 +4,15 @@
     <div class="container-fluid px-0">
         <x-masthead />
     </div>
+<<<<<<< HEAD
 
+=======
+   
+    @if(empty($article))
+    // The article is empty
+    @else
+    
+>>>>>>> 2f187886378c8b3816d057effbbe5a2291150b87
     <section>
         <div class="container">
             <h2 class="mt-5 text-secondary fs-5">
@@ -131,5 +139,9 @@
 
     </section>
 
+<<<<<<< HEAD
+=======
+    @endif
+>>>>>>> 2f187886378c8b3816d057effbbe5a2291150b87
 
 </x-layout>
