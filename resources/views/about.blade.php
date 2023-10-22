@@ -62,7 +62,9 @@
                         </div>
                     </div>
                 </section>
-
+                @if(empty($clientsChunked))
+                <!-- No Client -->
+                @else
                 <div class="row fs-5">
                     <h2>Clients</h2>
                     <div class="col-md-4 col-12">
@@ -87,6 +89,7 @@
                         </ul>
                     </div>
                 </div>
+                @endif
             </div>
         </div>
     </section>
